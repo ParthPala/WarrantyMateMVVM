@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">WarrantyMate</string>
+
+<!--    login page-->
+    <string name="lbl_tagline">Peace of Mind for Every Purchase</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_create_acc">Create an account</string>
+
+    <string name="lbl_welcome_back">Welcome Back</string>
+    <string name="lbl_login_acc">Log in to your account</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_password">Password</string>
+    <string name="lbl_remember_me">Remember Me</string>
+    <string name="btn_forgot_pas">Forgot Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="lbl_no_acc">Dont have an account?</string>
+    <string name="btn_sign_up">Sign up</string>
+
+<!--    signup -->
+    <string name="lbl_register">Register</string>
+    <string name="lbl_create_acc">Create your free account</string>
+    <string name="hint_email">Email id</string>
+    <string name="lbl_continue">or continue with</string>
+    <string name="lbl_already_acc">Already have an account</string>
+
+<!--    Home page -->
+    <string name="lbl_allWarranties">All Warranties</string>
+    <string name="lbl_expiring">Expiring Soon</string>
+    <string name="lbl_add">+ Add New Warranty</string>
+
+    <string name="lbl_warrantyList">Warranty List</string>
+    <string name="lbl_child_expire_title">Expires: </string>
+    
+    <string name="hint_productName">Product Name</string>
+    <string name="hint_productTyype">Product Type</string>
+    <string name="hint_productExp">Product Expiry Date</string>
+    <string name="btn_save">SAVE</string>
+
+    <string name="lbl_product">Product</string>
+    <string name="lbl_bill">Bill</string>
+    <string name="btn_edit">EDIT</string>
+    
+    <string-array name="itemTypeArray">
+        <item>Electronics</item>
+        <item>4 wheelers</item>
+        <item>2 wheelers</item>
+        <item>Apparels</item>
+        <item>Watch</item>
+        <item>Sports Equipment</item>
+        <item>Toys</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="ExpiryTenure">
+        <item>1 Day</item>
+        <item>1 Week</item>
+        <item>15 Days</item>
+        <item>30 Days/1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>9 months</item>
+        <item>12 months/1 year</item>
+        <item>18 months/1.5 years</item>
+        <item>24 months/2 years</item>
+        <item>2+ years</item>
+    </string-array>
+
+</resources>
+

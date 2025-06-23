@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_bck"
+        >
+
+        <TextView
+            android:id="@+id/lbl_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_35_sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_tagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_tagline"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20_sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@id/lbl_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_all_warranty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dimen_20_dp"
+            android:background="@drawable/round_edge_btn_grn_bck"
+            android:backgroundTint="@color/color_blue"
+            android:padding="@dimen/dimen_10_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_tagline">
+
+            <TextView
+                android:id="@+id/lbl_all_warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10_dp"
+                android:text="@string/lbl_allWarranties"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22_sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_warranty_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_10_dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22_sp"
+                app:layout_constraintStart_toStartOf="@id/lbl_all_warranty"
+                app:layout_constraintTop_toBottomOf="@id/lbl_all_warranty"
+                tools:text="12" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/lbl_warrantyList"
+                android:src="@drawable/ic_list"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.18" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_expire_soon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dimen_20_dp"
+            android:background="@drawable/round_edge_btn_grn_bck"
+            android:backgroundTint="@color/color_green"
+            android:padding="@dimen/dimen_10_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_all_warranty">
+
+            <TextView
+                android:id="@+id/lbl_expiring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10_dp"
+                android:text="@string/lbl_expiring"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22_sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_expire_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_10_dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22_sp"
+                app:layout_constraintStart_toStartOf="@id/lbl_expiring"
+                app:layout_constraintTop_toBottomOf="@id/lbl_expiring"
+                tools:text="12" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/lbl_warrantyList"
+                android:src="@drawable/ic_clock"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.18" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/btn_add_warranty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:background="@drawable/round_edge_btn_bck"
+            android:gravity="center"
+            android:text="@string/lbl_add"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_size_20_sp"
+            app:layout_constraintEnd_toEndOf="@id/btn_expire_soon"
+            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintStart_toStartOf="@id/btn_expire_soon"
+            app:layout_constraintTop_toBottomOf="@id/btn_expire_soon" />
+
+        <TextView
+            android:id="@+id/lbl_warranty_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:text="@string/lbl_warrantyList"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20_sp"
+            app:layout_constraintStart_toStartOf="@id/btn_add_warranty"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_warranty" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:background="@android:color/transparent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_warranty_list"
+            tools:listitem="@layout/child_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
